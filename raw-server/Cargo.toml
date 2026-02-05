@@ -1,10 +1,11 @@
 [package]
-name = "client"
+name = "raw-server"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-clap = { version = "4.5.56", features = ["derive"] }
 futures-util = "0.3.31"
+rustls-pki-types = "1.14.0"
 tokio = { version = "1.49.0", features = ["macros", "rt-multi-thread"] }
-tokio-tungstenite = { version = "0.28.0", features = ["native-tls"] }
+tokio-rustls = "0.26.4"
+tokio-tungstenite = "0.28.0"
