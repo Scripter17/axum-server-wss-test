@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["server", "client", "raw-server"]
+members = ["server", "client", "raw-server", "client-sync"]
 
 [patch.crates-io]
 axum-server = {path = "../axum-server"}
